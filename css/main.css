@@ -1,0 +1,103 @@
+/* mobile version, different layout and remove some content */
+
+li,
+a,
+link {
+    font-family: "Champagne & Limousines";
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+    color: #F2F2F2;
+}
+
+.container {
+    max-width: 430px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #516479;
+}
+
+.brand img {
+    width: 45%;
+    height: 45%;
+    margin: 0.5rem;
+}
+
+.socialmidea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: -0.2rem;
+}
+
+.mainnav ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1rem;   
+   background-color: rgba(81, 100, 121, 0.8);
+   z-index: 1;
+}
+/* I hate hamberger menu, I understand it look better. But put it on the upper right corner
+ especially mobile version is simply anti-human! Anyway,I don't know anyone with such long thumbs!  */
+
+.containerhome {
+    background-image: url(../images/banner/banner2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bio {
+    font-size: small;
+    color:#F2F2F2;
+    font-family: "Century Gothic";
+    background-color: rgba(81, 100, 121, 0.8);
+    margin-top: 13.5rem;
+}
+
+.bio .p1 {
+    padding: 0.8rem;
+}
+
+.bio ul, .bio .p2 {
+    display: none;
+}
+
+.bio .email, .bio .phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.bio .email button, .bio .phone button {
+    height: 1.8rem;
+    border-radius: 1rem;
+    background-color: #3270B5;
+    color: #F2F2F2;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bio .email img, .bio .phone img {
+    width: auto;
+    height: 50%;
+}
+
+
+
+
+
+
+
+

@@ -134,12 +134,14 @@ link {
 /* section gallery start */
 
 .titlegallery,
-.titlebackground {
+.titlebackground,
+.titleaboutme {
     background-color: #516479;
 }
 
 .titlegallery img,
-.titlebackground img {
+.titlebackground img,
+.titleaboutme img {
     padding: 0.5rem;
     width: 50%;
     height: 50%;
@@ -449,6 +451,7 @@ link {
 .time1, .time2, .time3 {
     margin-top: 0.5rem;
 }
+/* Education subtitles */
 
 .card1 .time1 p:nth-child(1),
 .card2 .time2 p:nth-child(1),
@@ -469,15 +472,15 @@ link {
     margin-top: -1rem;
 }
 
-.college1, 
-.college2,
-.college3 {
-    display: flex;
-    flex-direction: row;
-    font-family: "Book Antiqua";
-    font-size: small;
+/* card descriptions */
+
+.college1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     margin-top: -0.5rem;
 }
+
+/* leftpart of cards */
 
 .emblem1 {
     background-color: white;
@@ -498,18 +501,24 @@ link {
 
 }
 
+/* right parts of cards */
+
 .collegedescription1 {
     background-image: url(../images/other/HIEUcampus.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    background-position: absolute;
 }
 
 .university1 {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.7);
-    transform: translateY(3rem);
+    padding-top: 2.15rem;
+    padding-bottom: 2.15rem;
+    padding-left: -1rem;
     margin: -1rem;
+    transform: translateY(1.01rem);
+
 }
 
 .university1 p {
@@ -520,21 +529,25 @@ link {
     margin: 0;  
 }
 
+.college2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: -0.5rem;
+}
 
 .collegedescription2 {
     background-image: url(../images/other/BJUcampus.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-right:-10rem;
-    padding-right: 14rem;
+    background-position: absolute;
 }
 
 .university2 {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.7);
-    margin-right:-14rem;
-    padding-left: 4.5rem;
-    padding-right: 4rem;
-    transform: translateY(2rem);
+    padding-top: 2.15rem;
+    padding-bottom: 2.1rem;
+    transform: translateY(0.01rem);
 
 }
 
@@ -546,15 +559,24 @@ link {
     margin: 0;
 }
 
+.college3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: -0.5rem;
+}
+
 .collegedescription3 {
     background-image: url(../images/other/ACcampus.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    padding-right: 10rem;
+    background-position: absolute;
 }
 
 .university3 {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.7);
+    padding-top: 2.15rem;
+    padding-bottom: 2.1rem;
 }
 
 .university3 p {
@@ -562,8 +584,7 @@ link {
     font-size: small;
     margin: 0.4rem;
     color: #000;
-    text-align: left;
-    padding-right: 1rem;
+    text-align: center;
     margin: 0;
 }
 
@@ -572,4 +593,191 @@ link {
 .campus3 img {
     display: none;
 }
+
+/* Education cards finish!!! 5:47 AM I DID IT!!!!! */
+
+.containerbackground .prework {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+    margin-top: -1rem;
+}
+
+.containerbackground .prework img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containerbackground .prework p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+.workcards .workcard1,
+.workcards .workcard2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-top: -1rem;
+}
+
+.worktime1{
+    margin-top: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.worktime2 {
+    margin-top: 1.5rem;
+    margin-bottom: -0.5rem;
+}
+
+/* Education subtitles */
+
+.workcard1 .worktime1 p:nth-child(1),
+.workcard2 .worktime2 p:nth-child(1){
+    margin-left: 0.8rem;
+    font-family: "Champagne & Limousines";
+    font-weight: 600;
+    font-size: small;
+}
+
+.workcard1 .worktime1 p:nth-child(2),
+.workcard2 .worktime2 p:nth-child(2){
+    margin-left: 0.8rem;
+    font-family: "Book Antiqua";
+    font-weight: 200;
+    font-size: small;
+    margin-top: -1rem;
+}
+
+.company1, .company2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+}
+
+.kongzhong img {
+    width: 70%;
+    height: auto;
+    margin: 1rem;
+}
+
+.cetc img {
+    width: 70%;
+    height: auto;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+
+.industry1 p {
+    font-family: "Book Antiqua";
+    font-size: small;
+    color: #000;
+    text-align: center;
+    margin: 1rem;
+}
+
+.industry2 {
+    font-family: "Book Antiqua";
+    font-size: small;
+    color: #000;
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+/* background finished */
+/* Aboout me start */
+
+.containeraboutme{
+    background-color: #D9D9D9;
+}
+
+.containeraboutme .preeducate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+}
+
+.containerbackground .preeducate img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containerbackground .preeducate p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+.containeraboutme .mypersonality {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+}
+
+.containeraboutme .mypersonality img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containeraboutme .mypersonality p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+.charts {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #F2F2F2;
+    margin-top: -1rem;
+}
+
+.charts .chart1 {
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.charts .chart1 img{
+    width: 80%;
+    height: auto;
+    background-color: #F2F2F2;
+}
+
+.charts .chart2 {
+    display: none;
+}
+
+.charts .chart3 {
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.charts .chart3 img{
+    width: 80%;
+    height: auto;
+    background-color: #F2F2F2;
+}
+
+
+
+
+
+
+
+
+
 

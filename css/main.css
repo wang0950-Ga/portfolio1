@@ -10,11 +10,13 @@ link {
     color: #F2F2F2;
 }
 
+/* header start */
+
 .container {
     max-width: 430px;
     margin: 0 auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
 }
 
 .brand {
@@ -39,16 +41,19 @@ link {
 }
 
 .mainnav ul {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   padding: 1rem;   
-   background-color: rgba(81, 100, 121, 0.8);
-   z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgba(81, 100, 121, 0.8);
+    z-index: 1;
 }
+
+/* header over */
 /* I hate hamberger menu, I understand it look better. But put it on the upper right corner
  especially mobile version is simply anti-human! Anyway,I don't know anyone with such long thumbs!  */
+/* banner start */
 
 .containerhome {
     background-image: url(../images/banner/banner2.png);
@@ -58,46 +63,513 @@ link {
 
 .bio {
     font-size: small;
-    color:#F2F2F2;
+    color: #F2F2F2;
     font-family: "Century Gothic";
+    font-size: 0.7rem;
     background-color: rgba(81, 100, 121, 0.8);
-    margin-top: 13.5rem;
+    margin-top: 17.5rem;
+    padding-bottom: 1rem;
 }
 
 .bio .p1 {
-    padding: 0.8rem;
+    padding: 0.5rem;
+    margin-bottom: -0.5rem;
 }
 
-.bio ul, .bio .p2 {
+.bio ul,
+.bio .p2 {
     display: none;
 }
 
-.bio .email, .bio .phone {
+.bio .email,
+.bio .phone {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
+    transform: translateY(0.5rem);
 }
 
-.bio .email button, .bio .phone button {
-    height: 1.8rem;
-    border-radius: 1rem;
+.bio .email button,
+.bio .phone button {
+    height: 1.5rem;
+    border-radius: 0.8rem;
     background-color: #3270B5;
     color: #F2F2F2;
     border: 0px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-0.3rem);
 }
 
-.bio .email img, .bio .phone img {
+.bio .email img,
+.bio .phone img {
     width: auto;
+    height: 45%;
+}
+
+.bio .email p {
+    transform: translateX(-2rem);
+}
+
+.bio .phone p {
+    transform: translateX(-3.9rem);
+}
+
+.start button {
+    background-color: black;
+    color: #F2F2F2;
+    width: 7rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    border: none;
+    margin: auto;
+    display: block;
+
+}
+
+/* banner over */
+/* I think put "Get Start" in the mid-bottom is good idea, because it fair to right or left hand user */
+/* So I'll move all the quickjump from right-bottom to mid-bottom */
+/* section gallery start */
+
+.titlegallery,
+.titlebackground {
+    background-color: #516479;
+}
+
+.titlegallery img,
+.titlebackground img {
+    padding: 0.5rem;
+    width: 50%;
     height: 50%;
 }
 
+.containergallery,
+.containerbackground {
+    background-color: #D9D9D9;
+}
+
+.containergallery .Preproject {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+}
+
+.containergallery .Preproject img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containergallery .Preproject p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+/* Cards layout */
+
+.project1,
+.project2 {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    margin-top: -1rem;
+}
+
+.project1 .projectphoto1 img,
+.project2 .projectphoto2 img {
+    width: 75%;
+    margin: 0.5rem;
+}
+
+.projectdescripion1,
+.projectdescripion2 {
+    transform: translateX(-1rem);
+    width: 12.5rem;
+    margin: -0.5rem;
+    margin-top: 1rem;
+}
+
+.project1 .projectdescripion1 p:nth-child(1),
+.project2 .projectdescripion2 p:nth-child(1) {
+    font-family: "Book Antiqua";
+    color: rgb(32, 32, 32);
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding-left: -2rem;
+}
+
+.project1 .projectdescripion1 p:nth-child(2),
+.project2 .projectdescripion2 p:nth-child(2) {
+    font-family: "Book Antiqua";
+    color: rgb(32, 32, 32);
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin-top: -1rem;
+    padding-left: -2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.project1 .projectdescripion1 p:nth-child(3),
+.project2 .projectdescripion2 p:nth-child(3) {
+    font-family: "Book Antiqua";
+    color: rgb(32, 32, 32);
+    font-size: 0.7rem;
+    font-weight: 200;
+    padding-left: -2rem;
+    margin-top: -0.5rem;
+}
+
+.project1 .projecticon1 img,
+.project2 .projecticon2 img {
+    width: 1.6rem;
+    transform: translateX(-1.6rem);
+}
+
+.project1 .projecticon1 button,
+.project2 .projecticon2 button {
+    font-size: 0.8rem;
+    font-family: "Champagne & Limousines";
+    color: #F2F2F2;
+    background-color: #3270B5;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    width: 5rem;
+    transform: translateX(2.1rem);
+}
+
+.project2 {
+    margin-top: 1rem;
+}
+
+/* PP over */
+/* CS start */
+
+.containergallery .precase {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+}
+
+.containergallery .precase img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containergallery .precase p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+.case1,
+.case2 {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    margin-top: -1rem;
+}
+
+.case1 .casephoto1 img,
+.case2 .casephoto2 img {
+    width: 75%;
+    margin: 0.5rem;
+}
+
+.casedescription1,
+.casedescription2 {
+    transform: translateX(-1rem);
+    width: 12.5rem;
+    margin: -0.5rem;
+    margin-top: 1rem;
+}
+
+.casedescription1 p:nth-child(1),
+.casedescription2 p:nth-child(1) {
+    font-family: "Book Antiqua";
+    color: rgb(32, 32, 32);
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding-left: -2rem;
+}
+
+.casedescription1 p:nth-child(2),
+.casedescription2 p:nth-child(2) {
+    font-family: "Book Antiqua";
+    color: rgb(32, 32, 32);
+    font-size: 0.7rem;
+    font-weight: 200;
+    margin-top: 1rem;
+    padding-left: -2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.case1 .caseicons1 img,
+.case2 .caseicons2 img {
+    width: 1.6rem;
+    transform: translateX(-1.6rem);
+}
+
+.case1 .caseicons1 button,
+.case2 .caseicons2 button {
+    font-size: 0.8rem;
+    font-family: "Champagne & Limousines";
+    color: #F2F2F2;
+    background-color: #3270B5;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    width: 5rem;
+    transform: translateX(2.1rem);
+}
+
+.case2 {
+    margin-top: 1rem;
+}
+
+/* case over */
+/* research start */
+
+.containergallery .prestudy {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+}
+
+.containergallery .prestudy img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containergallery .prestudy p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+.research .articles {
+    margin-top: -1rem;
+    background-color: #F2F2F2;
+    padding: 0.8rem;
+}
+
+.research .articles p {
+    font-size: small;
+    color: rgb(32, 32, 32);
+    font-family: "Book Antiqua";
+    font-size: 0.7rem;
+}
+
+.articles .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.articles .content button {
+    font-size: 0.7rem;
+    border: none;
+    background-color: #3270B5;
+    color: #F2F2F2;
+    border-radius: 1rem;
+    height: 1.2rem;
+    width: 3rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    transform: translateY(-0.2rem);
+}
+
+.quickjump {
+    padding: 1rem;
+    text-align: center;
+}
+
+.quickjump button {
+    background-color: black;
+    color: #F2F2F2;
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 0.6rem;
+}
+
+/* gallery over */
+/* background start */
+
+.containerbackground .preeducate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+}
+
+.containerbackground .preeducate img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containerbackground .preeducate p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+.timeaxe,
+.timeaxe2 {
+    display: none;
+}
+
+.cards .card1,
+.cards .card2,
+.cards .card3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+}
+
+.time1, .time2, .time3 {
+    margin-top: 0.5rem;
+}
+
+.card1 .time1 p:nth-child(1),
+.card2 .time2 p:nth-child(1),
+.card3 .time3 p:nth-child(1){
+    margin-left: 0.8rem;
+    font-family: "Champagne & Limousines";
+    font-weight: 600;
+    font-size: small;
+}
+
+.card1 .time1 p:nth-child(2),
+.card2 .time2 p:nth-child(2),
+.card3 .time3 p:nth-child(2){
+    margin-left: 0.8rem;
+    font-family: "Book Antiqua";
+    font-weight: 200;
+    font-size: small;
+    margin-top: -1rem;
+}
+
+.college1, 
+.college2,
+.college3 {
+    display: flex;
+    flex-direction: row;
+    font-family: "Book Antiqua";
+    font-size: small;
+    margin-top: -0.5rem;
+}
+
+.emblem1 {
+    background-color: white;
+    padding: 1rem;
+}
+
+.emblem2{
+    background-color: white;
+    padding: 1rem;
+}
+
+.emblem3 {
+    background-color: white;
+    padding-left:0.5rem;
+    padding-right: 0.7rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+}
+
+.collegedescription1 {
+    background-image: url(../images/other/HIEUcampus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.university1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(3rem);
+    margin: -1rem;
+}
+
+.university1 p {
+    font-family: "Book Antiqua";
+    font-size: small;
+    color: #000;
+    text-align: center;   
+    margin: 0;  
+}
 
 
+.collegedescription2 {
+    background-image: url(../images/other/BJUcampus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right:-10rem;
+    padding-right: 14rem;
+}
 
+.university2 {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right:-14rem;
+    padding-left: 4.5rem;
+    padding-right: 4rem;
+    transform: translateY(2rem);
 
+}
 
+.university2 p {
+    font-family: "Book Antiqua";
+    font-size: small;
+    color: #000;
+    text-align: center;
+    margin: 0;
+}
 
+.collegedescription3 {
+    background-image: url(../images/other/ACcampus.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-right: 10rem;
+}
+
+.university3 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.university3 p {
+    font-family: "Book Antiqua";
+    font-size: small;
+    margin: 0.4rem;
+    color: #000;
+    text-align: left;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+.campus1 img,
+.campus2 img,
+.campus3 img {
+    display: none;
+}
 

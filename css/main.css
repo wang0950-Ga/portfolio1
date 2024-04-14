@@ -98,7 +98,7 @@ link {
 }
 
 .bio {
-    font-size: small;
+    font-size: medium;
     color: #F2F2F2;
     font-family: "Century Gothic";
     font-size: 0.7rem;
@@ -108,7 +108,7 @@ link {
 }
 
 .bio .p1 {
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: -0.5rem;
 }
 
@@ -129,27 +129,29 @@ link {
 
 .bio .email button,
 .bio .phone button {
-    height: 1.6rem;
+    width: 4rem;
+    height: 1.5rem;
     border-radius: 0.8rem;
     border: 0px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    transform: translateY(-0.2rem);
+    transform: translateY(-0.1rem);
     font-size: 0.8rem;
 }
 
 .bio .email img,
 .bio .phone img {
+    display: none;
     width: auto;
     height: 45%;
 }
 
-.bio .email p {
-    transform: translateX(-2rem);
+/* .bio .email p {
+    transform: translateX(1rem);
 }
 
 .bio .phone p {
-    transform: translateX(-3.9rem);
-}
+    transform: translateX(1rem);
+} */
 
 .start button {
     background-color: black;
@@ -173,8 +175,7 @@ link {
 .titleaboutme img,
 .titlecontacme img {
     padding: 0.5rem;
-    width: 50%;
-    height: 50%;
+    width: 15rem;
 }
 
 .containergallery,
@@ -874,7 +875,7 @@ link {
     }
 
     .containerhome {
-        background-image: url(../images/banner/banner1.jpg);
+        background-image: none;
         background-repeat: no-repeat;
         background-size: contain;
         background-size: 100%;
@@ -907,24 +908,26 @@ link {
         display: none;
     }
 
-    /* .desktop {
-        position: absolute; 
+    .desktop {
+        position: relative; 
         display: block;
-        width: 100%;
-        height: auto;      
-    } */
+        width: 960px;
+    } 
   
     .bio {
-        /* position: relative; */
-        width: 50%;
-        height: 50%;
+        position: absolute; 
+        width: 17rem;
+        top: -25%;
+        left: 55%;
         font-size: small;
         color: #F2F2F2;
         font-family: "Century Gothic";
         font-size: 0.7rem;
         background-color: rgba(81, 100, 121, 0.9);
-        margin-top: 10rem;
         z-index: 1;
+        padding: 1rem;
+        margin-right: 1rem;
+        border-radius: 1rem;
     }
 
     .bio ul,
@@ -933,7 +936,20 @@ link {
     }
     
     .bio .p2 {
-        padding:-0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .email, .phone {
+        padding-bottom: -1rem;
+        transform: translateY(-4rem);
+    }
+
+    .gallery {
+        margin-top: 10rem;
+    }
+
+    .biocontent {
+        margin-top: -1rem;
     }
 
 

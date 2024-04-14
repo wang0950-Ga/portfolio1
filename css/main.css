@@ -1,5 +1,39 @@
 /* mobile version, different layout and remove some content */
 
+:root {
+    --bs-primary: #516479;
+    --bs-link-color: #F2F2F2;
+    --bs-link-hover-color: #FFFFFF;
+    --bs-secondary-bg-subtle: #D9D9D9;
+    --bs-primary-rgb: 81, 100, 121;
+    --bs-btn-bg: #3270B5;
+    --bs-btn-bg: #0d6efd;
+}
+
+.btn-primary {
+    --bs-btn-color: #f2f2f2;
+    --bs-btn-bg: #3270B5;
+    --bs-btn-border-color: #103060;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #103060;
+    --bs-btn-hover-border-color: #103060;
+}
+
+
+.nav-underline {
+    --bs-nav-underline-gap: 2.5rem;
+    --bs-nav-underline-border-width: 0.1rem;
+    --bs-nav-underline-link-active-color: var(--bs-emphasis-color);
+    gap: var(--bs-nav-underline-gap);
+}
+
+.btn {
+    --bs-btn-font-size: 0.8rem;
+    --bs-btn-padding-y: 0.1rem; 
+}
+
+
+
 li,
 a,
 link {
@@ -12,7 +46,8 @@ link {
 
 /* header start */
 
-.container {
+.maincontainer,
+.containercontactme {
     max-width: 430px;
     margin: 0 auto;
     /* padding-top: 1rem;
@@ -93,13 +128,12 @@ link {
 
 .bio .email button,
 .bio .phone button {
-    height: 1.5rem;
+    height: 1.6rem;
     border-radius: 0.8rem;
-    background-color: #3270B5;
-    color: #F2F2F2;
     border: 0px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    transform: translateY(-0.3rem);
+    transform: translateY(-0.2rem);
+    font-size: 0.8rem;
 }
 
 .bio .email img,
@@ -141,7 +175,8 @@ link {
 
 .titlegallery img,
 .titlebackground img,
-.titleaboutme img {
+.titleaboutme img,
+.titlecontacme img {
     padding: 0.5rem;
     width: 50%;
     height: 50%;
@@ -200,7 +235,7 @@ link {
 .project2 .projectdescripion2 p:nth-child(1) {
     font-family: "Book Antiqua";
     color: rgb(32, 32, 32);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-top: 1rem;
     padding-left: -2rem;
@@ -238,8 +273,6 @@ link {
 .project2 .projecticon2 button {
     font-size: 0.8rem;
     font-family: "Champagne & Limousines";
-    color: #F2F2F2;
-    background-color: #3270B5;
     border: none;
     border-radius: 0.5rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
@@ -300,7 +333,7 @@ link {
 .casedescription2 p:nth-child(1) {
     font-family: "Book Antiqua";
     color: rgb(32, 32, 32);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     margin-top: 1rem;
     padding-left: -2rem;
@@ -321,20 +354,18 @@ link {
 .case1 .caseicons1 img,
 .case2 .caseicons2 img {
     width: 1.6rem;
-    transform: translateX(-1.6rem);
+    transform: translate(-1.6rem, 1.5rem);
 }
 
 .case1 .caseicons1 button,
 .case2 .caseicons2 button {
     font-size: 0.8rem;
     font-family: "Champagne & Limousines";
-    color: #F2F2F2;
-    background-color: #3270B5;
     border: none;
     border-radius: 0.5rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     width: 5rem;
-    transform: translateX(2.1rem);
+    transform: translate(2.1rem, 1.5rem);
 }
 
 .case2 {
@@ -361,7 +392,7 @@ link {
     font-family: "Century Gothic";
     color: #516479;
     margin-left: 0.5rem;
-    font-size: small;
+    font-size: medium;
 }
 
 .research .articles {
@@ -374,7 +405,7 @@ link {
     font-size: small;
     color: rgb(32, 32, 32);
     font-family: "Book Antiqua";
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .articles .content {
@@ -386,13 +417,11 @@ link {
 .articles .content button {
     font-size: 0.7rem;
     border: none;
-    background-color: #3270B5;
-    color: #F2F2F2;
     border-radius: 1rem;
     height: 1.2rem;
     width: 3rem;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-    transform: translateY(-0.2rem);
+    transform: translateY(0.1rem);
 }
 
 .quickjump {
@@ -430,7 +459,7 @@ link {
     font-family: "Century Gothic";
     color: #516479;
     margin-left: 0.5rem;
-    font-size: small;
+    font-size: medium;
 }
 
 .timeaxe,
@@ -515,8 +544,7 @@ link {
     background-color: rgba(255, 255, 255, 0.7);
     padding-top: 2.15rem;
     padding-bottom: 2.15rem;
-    padding-left: -1rem;
-    margin: -1rem;
+    margin-top: -1rem;
     transform: translateY(1.01rem);
 
 }
@@ -737,41 +765,85 @@ link {
     font-size: small;
 }
 
-.charts {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    background-color: #F2F2F2;
+.chart1,.chart3{
+    margin-bottom: 2rem;
+    background-color: #fff;
     margin-top: -1rem;
+    padding-left: -1rem;
+    padding-right: -1rem;
 }
 
-.charts .chart1 {
-    text-align: center;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.charts .chart1 img{
-    width: 80%;
+.chart1 img, 
+.chart3 img{
+    width: 70%;
     height: auto;
-    background-color: #F2F2F2;
 }
 
-.charts .chart2 {
+.chart2 {
     display: none;
 }
 
-.charts .chart3 {
-    text-align: center;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
+.chart4 {
+    background-color: #fff;
+    margin-top:-1rem;
 }
 
-.charts .chart3 img{
-    width: 80%;
+.chart4 img {
+    width: 90%;
     height: auto;
-    background-color: #F2F2F2;
 }
 
+.containeraboutme .skillsetting {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.6rem;
+    margin-top: -2rem;
+}
+
+.containeraboutme .skillsetting img {
+    height: 1rem;
+    width: auto;
+    margin-top: 0.1rem;
+}
+
+.containeraboutme .skillsetting p {
+    font-family: "Century Gothic";
+    color: #516479;
+    margin-left: 0.5rem;
+    font-size: small;
+}
+
+.name label,
+.email label,
+.message label {
+    font-family: "Century Gothic";
+    font-size: small;
+    color: #516479;
+}
+
+.name img,
+.email img,
+.message img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.contactform button {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    height: 1.8rem;
+    width: 6rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    transform: translate(18rem,0.5rem);
+    font-family: "Century Gothic";
+}
+
+.keywords img {
+    width: 70%;
+    height: auto;
+}
 
 
 

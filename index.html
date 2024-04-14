@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="maincontainer bg-secondary-subtle">
         <header>
-            <div class="brand">
+            <div class="brand bg-primary">
                 <img srcset="images/logo/logo 100w.png 430w, 
                                  images/logo/logo 150w.png 960w,
                                  images/logo/logo 200w. 1920w" sizes="(max-width:430px) 430px,
@@ -29,16 +29,16 @@
             </div>
         </header>
         <main>
-            <section class="banner" id="home">
+            <section class="banner" id="Home">
                 <div class="containerhome">
                     <!-- <img src="./images/banner/banner1.jpg" alt="banner my portrait" class="desktop"> -->
                     <!-- <img src="./images/banner/banner2.png" alt="Personal logo" class="mobile"> -->
                     <nav class="mainnav">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Background</a></li>
-                            <li><a href="#">About Me</a></li>
+                        <ul class="nav nav-underline justify-content-center">
+                            <li class="nav-item "><a class="nav-link" href="#Home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Background">Background</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Aboutme">About Me</a></li>
                         </ul>
                     </nav>
                     <div class="bio">
@@ -62,22 +62,22 @@
                         <div class="email">
                             <img src="./images/icon/Email.png" alt="email">
                             <p>galileowes@gmail.com</p>
-                            <button>copy & paste</button>
+                            <button class="btn btn-primary btn-sm">copy & paste</button>
                         </div>
                         <div class="phone">
                             <img src="./images/icon/Phone.png" alt="phone">
                             <p>3439879735</p>
-                            <button>copy & paste</button>
+                            <button class="btn btn-primary btn-sm">copy & paste</button>
                         </div>
                         <div class="start">
-                            <button>Get Start!</button>
+                            <a href="#gallery"><button class="btn btn-secondary">Get Start!</button></a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="gallery" id="gallry">
-                <div class="titlegallery">
+            <section class="gallery" id="gallery">
+                <div class="titlegallery bg-primary">
                     <img src="./images/title/gallery.png" alt="my project">
                 </div>
                 <div class="containergallery">
@@ -85,7 +85,7 @@
                         <img src="./images/icon/Test Passed.png" alt="Previous Projects">
                         <p>Previous Projects</p>
                     </div>
-                    <div class="projectcards">
+                    <div class="projectcards ">
                         <div class="project1">
                             <div class="projectphoto1">
                                 <img src="./images/project/wangan1.png" alt="Vulnerability Library Interface Design">
@@ -99,7 +99,7 @@
                                 <div class="projecticon1">
                                     <img src="./images/tools/Axure pr.png" alt="axuer icon">
                                     <img src="./images/tools/Ai.png" alt="ai icon">
-                                    <button>Check ></button>
+                                    <button class="btn btn-primary btn-sm">Check ></button>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                 <div class="projecticon2">
                                     <img src="./images/tools/Axure pr.png" alt="axuer icon">
                                     <img src="./images/tools/Ai.png" alt="ai icon">
-                                    <button>Check ></button>
+                                    <button class="btn btn-primary btn-sm">Check ></button>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +141,7 @@
                                     <div class="caseicons1">
                                         <img src="./images/tools/Axure pr.png" alt="axuer icon">
                                         <img src="./images/tools/figma.png" alt="ai icon">
-                                        <button>Check ></button>
+                                        <button class="btn btn-primary btn-sm">Check ></button>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +159,7 @@
                                     <div class="caseicons2">
                                         <img src="./images/tools/Axure pr.png" alt="axuer icon">
                                         <img src="./images/tools/figma.png" alt="ai icon">
-                                        <button>Check ></button>
+                                        <button class="btn btn-primary btn-sm">Check ></button>
                                     </div>
                                 </div>
                             </div>
@@ -173,28 +173,28 @@
                             <div class="articles">
                                 <div class="content">
                                     <p>[2024-03-10] &nbsp Competitive analysis: Portfolio</p>
-                                    <button>Go ></button>
+                                    <button class="btn btn-primary btn-sm">Go ></button>
                                 </div>
                                 <div class="content">
                                     <p>[2024-03-10] &nbsp UX analysis model: How to analysis</p>
-                                    <button>Go ></button>
+                                    <button class="btn btn-primary btn-sm">Go ></button>
                                 </div>
                                 <div class="content">
                                     <p>[2024-03-21] &nbsp A better layout: Trello</p>
-                                    <button>Go ></button>
+                                    <button class="btn btn-primary btn-sm">Go ></button>
                                 </div>
                             </div>
                         </div>
                         <div class="quickjump">
-                            <button>GO BACK</button>
-                            <button>GO NEXT</button>
+                            <button class="btn btn-secondary">GO BACK</button>
+                            <button class="btn btn-secondary">GO NEXT</button>
                         </div>
                     </div>
             </section>
 
             <section class="Background" id="Background">
                 <div class="containerbackground">
-                    <div class="titlebackground">
+                    <div class="titlebackground bg-primary">
                         <img src="./images/title/background.png" alt="my project">
                     </div>
 
@@ -317,107 +317,124 @@
                                     </div>
                                 </div>
                                 <div class="quickjump">
-                                    <button>GO BACK</button>
-                                    <button>GO NEXT</button>
+                                    <button class="btn btn-secondary">GO BACK</button>
+                                    <button class="btn btn-secondary">GO NEXT</button>
                                 </div>
                             </div>
                         </div>
                     </div>
             </section>
 
-            <section class="aboutme" id="aboutme">
-                <div class="containeraboutme">
-                    <div class="titleaboutme">
+
+            <section class="aboutme" id="Aboutme">
+                <div class="containeraboutme ">
+                    <div class="titleaboutme bg-primary">
                         <img src="./images/title/aboutme.png" alt="aboutme">
                     </div>
-
-                    <div class="personality">
-                        <div class="mypersonality">
-                            <img src="./images/icon/Popular Man.png" alt="Personality">
-                            <p>Personality</p>
-                        </div>
-
-                        <div class="charts">
-                            <div class="chart1"><img src="./images/charts/chart1.png" alt="chart1"></div>
-                            <div class="chart2"><img src="./images/charts/chart2.png" alt="This is my portrait"></div>
-                            <div class="chart3"><img src="./images/charts/chart3.png" alt="chart3"></div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <img src="./images/icon/Learning.png" alt="Skill setting">
-                                <p>Skill setting</p>
+                    <div class="mypersonality">
+                        <img src="./images/icon/Popular Man.png" alt="Personality">
+                        <p>Personality</p>
+                    </div>
+                    <div class="containercharts grid">
+                        <div class="row">
+                            <div class="chart1 g-col-sm-12 g-col-lg-4 gx-4 mb-5 pt-3 pb-3 text-center">
+                                <img src="./images/charts/chart1.png" alt="chart1">
                             </div>
-                            <div>
+                            <div class="chart2 g-col-sm-12 g-col-lg-4 gx-4 text-center bg-body-tertiary">
+                                <img src="./images/charts/chart2.png" alt="This is my portrait">
+                            </div>
+                            <div class="chart3 g-col-sm-12 g-col-lg-4 gx-4 pt-3 pb-3 text-center">
+                                <img src="./images/charts/chart3.png" alt="chart3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skillsetting">
+                        <img src="./images/icon/Learning.png" alt="Skill setting">
+                        <p>Skill setting</p>
+                    </div>
+                    <div class="container text-left">
+                        <div class="row">
+                            <div class="chart4 g-col-sm-12 g-col-lg-6 gx-6 pt-3 pb-3 text-center">
                                 <img src="./images/charts/chart4.png" alt="chart4">
                             </div>
-                        </div>
-                        <div class="tool">
-                            <div>
-                                <img src="./images/tools/figma.png" alt="figma">
-                                <img src="./images/tools/Axure pr.png" alt="Axure pr">
-                                <img src="./images/tools/xd.png" alt="xd">
+                            <div class="tool grid pt-3 pb-3 text-center">
+                                <div class="pt-2 pb-2 px-1 py-1">
+                                    <img src="./images/tools/figma.png" alt="figma">
+                                    <img src="./images/tools/Axure pr.png" alt="Axure pr">
+                                    <img src="./images/tools/xd.png" alt="xd">
+                                </div>
+                                <div class="pt-2 pb-2 px-1 py-1">
+                                    <img src="./images/tools/Ai.png" alt="ai">
+                                    <img src="./images/tools/ps.png" alt="ps">
+                                    <img src="./images/tools/id.png" alt="id">
+                                    <img src="./images/tools/pr.png" alt="pr">
+                                    <img src="./images/tools/lrc.png" alt="lrc">
+                                </div>
+                                <div class="pt-2 pb-2 px-1 py-1">
+                                    <img src="./images/tools/js.png" alt="js">
+                                    <img src="./images/tools/css.png" alt="css">
+                                    <img src="./images/tools/html.png" alt="html">
+                                    <img src="./images/tools/python3.png" alt="python3">
+                                </div>
                             </div>
-                            <div>
-                                <img src="./images/tools/Ai.png" alt="ai">
-                                <img src="./images/tools/ps.png" alt="ps">
-                                <img src="./images/tools/id.png" alt="id">
-                                <img src="./images/tools/pr.png" alt="pr">
-                                <img src="./images/tools/lrc.png" alt="lrc">
-                            </div>
-                            <div>
-                                <img src="./images/tools/js.png" alt="js">
-                                <img src="./images/tools/css.png" alt="css">
-                                <img src="./images/tools/html.png" alt="html">
-                                <img src="./images/tools/python3.png" alt="python3">
-                            </div>
-                        </div>
-                        <div class="quickjump">
-                            <button>GO BACK</button>
-                            <button>GO NEXT</button>
                         </div>
                     </div>
+                </div>
+                <div class="quickjump">
+                    <button class="btn btn-secondary">GO BACK</button>
+                    <button class="btn btn-secondary">GO NEXT</button>
+                </div>
             </section>
+
             <section class="contactme" id="contactme">
                 <div class="containercontactme">
-                    <div class="contactform">
+                    <div class="titlecontacme bg-primary">
+                        <img src="./images/title/contactme.png" alt="aboutme">
+                    </div>
+                    <div class="contactform p-4">
                         <form>
-                            <div class="mb-2">
-                                <label for="inputname" class="form-label"><img src="./images/icon/Autograph.png"
-                                        alt="Full Name">Full Name</label>
-                                <input type="text" class="form-control rounded-0" id="inputname">
+                            <div class="name mb-2">
+                                <label for="inputname" class="form-label"><img src="./images/icon/name.png"
+                                        alt="Full Name">&nbsp;&nbsp;Name</label>
+                                <input type="text" class="form-control rounded-3" id="inputname">
                             </div>
-                            <div class="mb-2">
-                                <label for="inputemail" class="form-label"><img src="./images/icon/Email.png"
-                                        alt="email">Email</label>
-                                <input type="email" class="form-control rounded-0" id="inputemail">
+                            <div class="email mb-2">
+                                <label for="inputemail" class="form-label"><img src="./images/icon/Emailblue.png"
+                                        alt="email">&nbsp;&nbsp;Email</label>
+                                <input type="email" class="form-control rounded-3" id="inputemail">
                             </div>
-                            <div class="mb-2">
+                            <div class="message mb-2">
                                 <label for="message" class="form-label"><img src="./images/icon/Chat Bubble.png"
-                                        alt="">Your
+                                        alt="">&nbsp;&nbsp;Your
                                     Message</label>
-                                <textarea class="form-control rounded-0" id="message" cols="30" rows="5"></textarea>
+                                <textarea class="form-control rounded-3" id="message" cols="30" rows="5"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-dark rounded-0">Submit</button>
+                            <button type="submit" class="subtmit btn btn-primary btn-sm rounded-5">Sent&nbsp;&nbsp;<img src="./images/icon/Sent.png" width="20%" height="auto"></button>
                         </form>
                     </div>
-                    <div>
+                    <div class="keywords text-center mt-3 mb-3">
                         <img src="./images/other/keywords.png" alt="keywords">
                     </div>
                 </div>
             </section>
         </main>
+
         <footer>
             <nav>
-                <div class="footnav">
-                    <img src="./images/logo/robfisher white.png" alt="Personal logo">
-                    <ul class="nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Background</a></li>
-                        <li><a href="#">About Me</a></li>
-                    </ul>
-                    <button>BACK TO TOP!</button>
+                    <div class="brand bg-primary">
+                        <img srcset="images/logo/logo 100w.png 430w, 
+                                         images/logo/logo 150w.png 960w,
+                                         images/logo/logo 200w. 1920w" sizes="(max-width:430px) 430px,
+                                        (max-width:960px) 960px,
+                                        (max-width:1920px) 1920px" src="images/logo/logo 100w.png" alt="Personal logo">
+                        <ul class="socialmidea">
+                            <li><a href="#"><img src="./images/icon/ins.png" alt="insgrams"></a></li>
+                            <li><a href="#"><img src="./images/icon/whatsapp.png" alt="whatsapp"></a></li>
+                            <li><a href="#"><img src="./images/icon/facebook.png" alt="facebook"></a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-secondary">BACK TO TOP!</button>
         </footer>
     </div>
 </body>

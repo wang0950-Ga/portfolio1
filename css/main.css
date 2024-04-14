@@ -32,8 +32,6 @@
     --bs-btn-padding-y: 0.1rem; 
 }
 
-
-
 li,
 a,
 link {
@@ -845,7 +843,15 @@ link {
     height: auto;
 }
 
-
+.backtotop button{
+    background-color: black;
+    color: #F2F2F2;
+    width: 7rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    border: none;
+    transform:translate(-1rem);
+}
 
 
 

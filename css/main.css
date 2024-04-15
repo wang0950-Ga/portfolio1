@@ -1216,12 +1216,6 @@ link {
         margin-left: 0.5rem;
     }
 
-    .email,
-    .phone {
-        padding-bottom: -1rem;
-        transform: translateY(-4rem);
-    }
-
     .gallery {
         margin-top: 10rem;
     }
@@ -1549,6 +1543,21 @@ link {
     .tool div img {
         width: 15%;
     }
+    
+    .contactform form {
+        margin-left: 2rem;
+    }
+
+    .contactform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .keywords img {
+        width: 20rem;
+    }
+
+
 
 
 
